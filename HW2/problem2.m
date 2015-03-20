@@ -21,26 +21,14 @@ gscatter(X(:,1),X(:,2),Y);
 title('Scatter Diagram of Data');
 
 fprintf('start training\n');
-gamma = 100;
-SVMModel = fitcsvm(X,Y,'Standardize',true,'KernelFunction','RBF',...
-    'BoxConstraint',Inf,'ClassNames',[-1,1]);
 
-fprintf('prepare graph\n');
-d = 0.02;
-[x1Grid,x2Grid] = meshgrid(min(X(:,1)):d:max(X(:,1)),...
-    min(X(:,2)):d:max(X(:,2)));
+sigma = 1;
+gamma = 1/(2*sigma^2);
+model = svmtrain(Y, X, sprintf('-s 0 -t 2 -g %g', gamma));
 
-xGrid = [x1Grid(:),x2Grid(:)];
-[~,scores] = predict(SVMModel,xGrid);
+[predicted_label, accuracy, decision_values] = svmpredict(Y, X, model);
 
-% Plot the data and the decision boundary
-fprintf('start plotting\n');
-figure;
-h(1:2) = gscatter(X(:,1),X(:,2),Y,'rb','.');
-hold on
-ezpolar(@(x)1);
-h(3) = plot(X(SVMModel.IsSupportVector,1),X(SVMModel.IsSupportVector,2),'ko');
-contour(x1Grid,x2Grid,reshape(scores(:,2),size(x1Grid)),[0 0],'k');
-legend(h,{'-1','+1','Support Vectors'});
-axis equal
-hold off
+% Plot heatmap
+plotboundary(Y, X, model, 't');
+
+title(sprintf('\\sigma = %g', sigma), 'FontSize', 14);

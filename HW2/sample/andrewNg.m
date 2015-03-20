@@ -1,8 +1,8 @@
 % Exercise 8: SVM Nonlinear classification
 % Load training features and labels
-[y, x] = libsvmread('ex8a.txt');
+[y, x] = libsvmread('ex8b.txt');
 
-gamma = 100;
+gamma = 1000;
 
 % Libsvm options
 % -s 0 : classification
