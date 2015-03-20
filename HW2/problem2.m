@@ -20,4 +20,27 @@ figure;
 gscatter(X(:,1),X(:,2),Y);
 title('Scatter Diagram of Data');
 
-SVMModel1 = fitcsvm(X,Y,'KernelFunction','gaussianKernenl','Standardize',true);
+fprintf('start training\n');
+gamma = 100;
+SVMModel = fitcsvm(X,Y,'Standardize',true,'KernelFunction','RBF',...
+    'BoxConstraint',Inf,'ClassNames',[-1,1]);
+
+fprintf('prepare graph\n');
+d = 0.02;
+[x1Grid,x2Grid] = meshgrid(min(X(:,1)):d:max(X(:,1)),...
+    min(X(:,2)):d:max(X(:,2)));
+
+xGrid = [x1Grid(:),x2Grid(:)];
+[~,scores] = predict(SVMModel,xGrid);
+
+% Plot the data and the decision boundary
+fprintf('start plotting\n');
+figure;
+h(1:2) = gscatter(X(:,1),X(:,2),Y,'rb','.');
+hold on
+ezpolar(@(x)1);
+h(3) = plot(X(SVMModel.IsSupportVector,1),X(SVMModel.IsSupportVector,2),'ko');
+contour(x1Grid,x2Grid,reshape(scores(:,2),size(x1Grid)),[0 0],'k');
+legend(h,{'-1','+1','Support Vectors'});
+axis equal
+hold off

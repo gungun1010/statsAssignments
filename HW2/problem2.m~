@@ -18,9 +18,15 @@ end
         
 figure;
 gscatter(X(:,1),X(:,2),Y);
-title('Scatter Diagram of Data')
+title('Scatter Diagram of Data');
 
-function k = gaussianKernenl(X,Y)
-    var = 1;
-    k = exp(-norm(X-Y,
-end
+gamma = 100;
+SVMModel = fitcsvm(X,Y,'Standardize',true,'KernelFunction','RBF',...
+    'KernelScale',gamma);
+
+d = 0.02;
+[x1Grid,x2Grid] = meshgrid(min(X(:,1)):d:max(X(:,1)),...
+    min(X(:,2)):d:max(X(:,2)));
+
+xGrid = [x1Grid(:),x2Grid(:)];
+[~,scores] = predict(SVMModel,xGrid);
