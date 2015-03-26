@@ -1,0 +1,112 @@
+\documentclass[twoside]{article}
+
+\usepackage{amsmath,amsthm,amssymb,epsfig}
+\usepackage{hyperref}
+\usepackage[numbers]{natbib}
+
+
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newenvironment{pf}{{\noindent\sc Proof. }}{\qed}
+\newenvironment{map}{\[\begin{array}{cccc}} {\end{array}\]}
+
+\newcommand{\comment}[1]{}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\newtheorem*{exmp}{Example}
+\newtheorem*{prob}{Problem}
+
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem*{exer}{Exercise}
+
+\setlength{\oddsidemargin}{0.25 in}
+\setlength{\evensidemargin}{-0.25 in}
+\setlength{\topmargin}{-0.6 in}
+\setlength{\textwidth}{6.5 in}
+\setlength{\textheight}{8.5 in}
+\setlength{\headsep}{0.75 in}
+\setlength{\parindent}{0 in}
+\setlength{\parskip}{0.1 in}
+
+\newcommand{\widgraph}[2]{\includegraphics[keepaspectratio,width=#1]{#2}}
+\newcommand{\widgraphr}[3]{\includegraphics[keepaspectratio,width=#1,angle=#3]{#2}}
+
+\newcommand{\lecture}[4]{
+   \pagestyle{myheadings}
+   \thispagestyle{plain}
+   \newpage
+   \setcounter{page}{1}
+   \noindent
+   \begin{center}
+   \framebox{
+      \vbox{\vspace{2mm}
+    \hbox to 6.28in { {\bf Stat365/665 (Spring 2015) Data Mining and Machine Learning \hfill Lecture: #4} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\Large \hfill #1  \hfill} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\it Lecturer: #2 \hfill Scribe: #3} }
+      \vspace{2mm}}
+   }
+   \end{center}
+   \markboth{#1}{#1}
+   \vspace*{4mm}
+}
+
+
+%%%%%%%
+% Some commonly used notation
+%%%%%%%
+
+\def\R{{\mathbb R}}
+\def\X{{\mathcal X}}
+\def\Y{{\mathcal Y}}
+\def\H{{\mathcal H}}
+\def\E{{\mathbb E}}
+\def\sign{{\rm sign}}
+
+\newcommand{\percent}{$\%$}
+
+\begin{document}
+
+\lecture{STATS 665 Homework 2}{Leon Lixing Yu}{Leon Lixing Yu}{1}
+
+\section{Problem 1}
+\subsection{closed form of $\hat \beta$}
+$\hat \beta$ is given by:\[ \hat \beta = \underset{\beta}{\operatorname{argmin}}  \frac{1}{2}\|X\beta - y\|_2^2 + \lambda\|\beta\|_2^2\] 
+In order to find $argmin$, we need to take the derivative of the loss function and make it equal to 0. In this assignment, I will use
+the notation, $x_j^{(i)}$, to denote that for the given data ${(x^{(i)},y^{(i)})}_{i=1}^n$, $x_j^{(i)}$ is the $j$th element of $x^{(i)}$, where $x^{(i)} \in \R^d, y \in \R$, $X \in \R^{d\times n}, Y \in \R^n$. 
+Therefore, we have:
+\[ \frac{d}{d\beta_j}l(\beta | X,Y) = (\overset{n}{\underset{i=1}{{\Sigma}}}((\overset{d}{\underset{j=1}{{\Sigma}}}x_j^{(i)}\beta_j) - y^{(i)})^2 + \lambda\overset{d}{\underset{j=1}{{\Sigma}}}\beta_j^2)^\prime = 0\]
+\[ \Rightarrow 2X^T(X\beta - Y) + 2\lambda\textbf(I_d)\beta = 0\]
+\[ \Rightarrow \hat \beta = (X^TX + \lambda\textbf(I_d))^{-1}X^TY\]
+
+\subsection{Find a simple expression for $\| \hat \beta - \beta^* \|$}
+FIXME
+\subsection{Find a closed form of $\hat f$}
+Notation Note: Following the previous convention, I am using ${(x^{(i)},y^{(i)})}_{i=1}^n$ instead of ${(x_i,y_i)}_{i=1}^n$ to represent the dataset.
+In this question, I use $f(x^{(i)})$ and $<f, \phi(x^{(i)})>$ interchangably. 
+We know that:
+\[ f \in \H \Rightarrow \quad f(x^{(i)}) \in \H \Rightarrow \quad <f, \phi(x^{(i)})> \in \H\]
+With the notation given, we have equation:
+\[ \hat f = \underset{f}{\operatorname{argmin}} \sum_{i=1}^n (y^{(i)} -  <f, \phi(x^{(i)})>_\H)^2 + \lambda \|f\|_\H^2\]
+Using representer theorm, we have:
+\[ f = \sum_{i=1}^n\alpha^{(i)}\phi(x^{(i)})= \sum_{i=1}^n\alpha^{(i)}k(x^{(i)},\cdot)\]
+The equation above means $f$ is a linear combination of feature space, mapping of points. substitute the relation above into the original $\hat f$ equation, we have:
+\[ \sum_{i=1}^n (y^{(i)} -  <f, \phi(x^{(i)})>_\H)^2 + \lambda \|f\|_\H^2=\|Y-K\boldsymbol\alpha\|^2+\lambda\boldsymbol\alpha^TK\boldsymbol\alpha\]
+Taking derivative over $\alpha$ and make it equal to 0 to get $\underset{\alpha}{\operatorname{argmin}}$:
+\[\frac{d}{d\alpha}(\|Y-K\boldsymbol\alpha\|^2+\lambda\boldsymbol\alpha^TK\boldsymbol\alpha) = 0\]
+\[\Rightarrow 2K(Y - K\boldsymbol\alpha)+2\lambda\mathbf{I_d}K\boldsymbol\alpha = 0\]
+\[\Rightarrow (K+ \lambda\mathbf{I_d})\boldsymbol\alpha = 2Y\]
+\[\Rightarrow \boldsymbol{\hat \alpha} = (K +  \lambda\mathbf{I_d})^{-1}Y\]
+
+recall:
+\[ f = \sum_{i=1}^n\alpha^{(i)}\phi(x^{(i)})= \sum_{i=1}^n\alpha^{(i)}k(x^{(i)},\cdot)\]
+our $\hat f$ is then:
+\[\hat f = K^T\boldsymbol{\hat \alpha}= K^T (K +  \lambda\mathbf{I_d})^{-1}Y\] In which $K$ is the Kernel matrix W.R.T $X$
+
+\end{document}
