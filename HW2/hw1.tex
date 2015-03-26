@@ -1,6 +1,6 @@
 \documentclass[twoside]{article}
 
-\usepackage{amsmath,amsthm,amssymb,epsfig}
+\usepackage{amsmath,amsthm,amssymb,graphicx}
 \usepackage{hyperref}
 \usepackage[numbers]{natbib}
 
@@ -108,5 +108,37 @@ recall:
 \[ f = \sum_{i=1}^n\alpha^{(i)}\phi(x^{(i)})= \sum_{i=1}^n\alpha^{(i)}k(x^{(i)},\cdot)\]
 our $\hat f$ is then:
 \[\hat f = K^T\boldsymbol{\hat \alpha}= K^T (K +  \lambda\mathbf{I_d})^{-1}Y\] In which $K$ is the Kernel matrix W.R.T $X$
+\subsection{implement the solution of $\hat f$ in matlab}
+The code for this part is attached in \textbf{Appendix A: problem 1 Code}, I use Gaussian Kernel because it is the first one I tried and it worked pretty well. I have attached a few graphs to show the differences between real label value and decision values got from $\hat f$.\\
+To have a perfect fit, I adujust the values of $\lambda$ and $\sigma$. 
+Multiple attempts are shown below with description.
+
+\section{Problem 2}
+\section{Problem 3}
+\subsection{Show $k(x,y)$ is a valid kernel}
+We know that kernel is a function that maps $\chi \times \chi \rightarrow \R$. 
+We also know that kernel is valid if and only if for ${x_i}_{i=1}^n \in \chi, K_{ij} = k(x_i,x_j)$ is PSD. We need to prove these two statements.\\ 
+Proving $k(x,y)$ maps $\chi \times \chi \rightarrow \R$:\\ 
+Assuming:
+\[k_1(x,y) = <\Phi_1(x),\Phi_1(y)>\]
+\[k_2(x,y) = <\Phi_2(x),\Phi_2(y)>\]
+Since $k_1(x,y)$ and $k_2(x,y)$ are vaild kernel, they both maps $\chi \times \chi \rightarrow \R$. 
+we now have 
+\[k(x,y) = <\Phi_1(x),\Phi_1(y)>\cdot <\Phi_2(x),\Phi_2(y)>\]
+\[\Rightarrow k(x,y) = (\Phi_1(x)^T \Phi_1(y))\cdot(\Phi_2(x)^T\Phi_2(y))\]
+\[\Rightarrow k(x,y) \in \R\]
+We also know that $(x,y) \in \R^\chi$, so $k(x,y)$ maps $\chi \times \chi \rightarrow \R$.\\
+Proving $k(x,y)$ is PSD:
+\[K_{ij} = k(x_i,x_j) =  <\Phi(x_i),\Phi(x_j)> =\Phi(x_i)^T\Phi(x_j) \]
+\[\upsilon^T K \upsilon = \sum_i^n \sum_j^n \upsilon_i K_{ij} \upsilon_j\]
+\[=\sum_i^n \sum_j^n \upsilon_i \Phi(x_i)^T\Phi(x_j) \upsilon_j\]
+\[=\sum_i^n \sum_j^n \upsilon_i \sum_l^n \phi_l(x_i)^T\phi_l(x_j) \upsilon_j\]
+\[=\sum_l^n \sum_i^n \sum_j^n \upsilon_i \phi_l(x_i)^T\phi_l(x_j) \upsilon_j\]
+\[=\sum_l^n(\sum_i^n \upsilon_i \phi_l(x_i))^2 \geq 0\]
+
+
+
+ 
+end of the story
 
 \end{document}

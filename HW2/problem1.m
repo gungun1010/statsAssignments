@@ -42,7 +42,7 @@ title('Scatter Diagram of Data');
 %using gaussian kernel for training
 %sigma is used in Gaussian Kernel
 %lamda is the regularization parameter
-sigma = sqrt(0.1);
+sigma = 3;
 K = KRR_GaussianKernel(X',X',sigma);
 
 %Regulation matrix
@@ -51,7 +51,7 @@ Identity=eye(length(K(:,1)));
 %using closed form of alpha derived from previous question
 %label is the Y
 %KRR_train is my alpha_hat
-lamda = 1;
+lamda = 0.01;
 KRR_train = ((K+lamda*Identity)^-1)*label;
 
 %test the KRR
