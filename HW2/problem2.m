@@ -1,3 +1,8 @@
+%clear workspace
+clear all
+close all
+
+%open the training dataset
 fid = fopen('dataset2/dataset2.2.train.csv');
 out = textscan(fid,'%f%f%s','delimiter',',');
 fclose(fid);
@@ -24,6 +29,11 @@ fprintf('start training\n');
 
 sigma = 1;
 gamma = 1/(2*sigma^2);
+
+% Libsvm options
+% -s 0 : classification
+% -t 2 : RBF kernel
+% -g : gamma in the RBF kernel
 model = svmtrain(Y, X, sprintf('-s 0 -t 2 -g %g', gamma));
 
 [predicted_label, accuracy, decision_values] = svmpredict(Y, X, model);
