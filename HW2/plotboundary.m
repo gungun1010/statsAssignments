@@ -25,15 +25,15 @@ for i = 1:size(X, 2)
 end
 
 % Plot the SVM boundary
-colormap hsv;
+%colormap hsv;
 %colormap(flipud(colormap));
 if (size(varargin, 2) == 1) && (varargin{1} == 't')
     contourf(X,Y, vals, 50, 'LineStyle', 'none');
 end
 
-% figure;
-% contour(X,Y, vals, [0 0], 'LineWidth', 2, 'Color', 'k');
-%contour(X,Y, vals);
+figure;
+%contour(X,Y, vals, [0 0], 'LineWidth', 2, 'Color', 'k');
+contour(X,Y, vals);
 
 % Plot the training data on top of the boundary
 % pos = find(labels == 1);
