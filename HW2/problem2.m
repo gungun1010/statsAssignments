@@ -27,7 +27,7 @@ title('Scatter Diagram of Data');
 
 fprintf('start training\n');
 
-sigma = 0.02;
+sigma = 0.1;
 gamma = 1/(2*sigma^2);
 
 % Libsvm options
