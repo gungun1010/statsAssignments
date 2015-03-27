@@ -3,7 +3,7 @@
 \usepackage{amsmath,amsthm,amssymb,graphicx}
 \usepackage{hyperref}
 \usepackage[numbers]{natbib}
-
+\usepackage{float}
 
 \theoremstyle{definition}
 \newtheorem{thm}{Theorem}[section]
@@ -111,7 +111,42 @@ our $\hat f$ is then:
 \subsection{implement the solution of $\hat f$ in matlab}
 The code for this part is attached in \textbf{Appendix A: problem 1 Code}, I use Gaussian Kernel because it is the first one I tried and it worked pretty well. I have attached a few graphs to show the differences between real label value and decision values got from $\hat f$.\\
 To have a perfect fit, I adujust the values of $\lambda$ and $\sigma$. 
-Multiple attempts are shown below with description.
+Multiple attempts are shown below with descriptions.
+\begin{figure}[H]
+\centering
+\includegraphics[width=120mm]{problem1Pic1.jpg}
+\caption{Red circle indicates labels, blue cross is the $\hat f$ value. $n=10, \lambda =1, \sigma^2 = 0.1$ in this test case. I see that when $x^{(i)}$ is close to decision boundary, 0, it is more accurate in this setting.It is an underfit case.  \label{problem1Pic1}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=120mm]{problem1Pic2.jpg}
+\caption{ $\lambda =1, \sigma = 1$ in this test case. I see that most of the $x^{(i)}$ can be predicted accurately with two exceptions at the end of the decision boundary   \label{problem1Pic2}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=120mm]{problem1Pic3.jpg}
+\caption{ $\lambda =1, \sigma = 5$ in this test case. Though the $x^{(i)}$ at both ends are better predicted, the average accuracy has dropped.    \label{problem1Pic2}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=120mm]{problem1Pic4.jpg}
+\caption{ $\lambda =1, \sigma = 10$.  All $x^{(i)}$ are fitted badly. It is clearly a case of over fitting.  \label{problem1Pic2}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=120mm]{problem1Pic5.jpg}
+\caption{ $\lambda =1, \sigma = 0.1$.  It is clearly a case of under fit. It is way under fit so that the decision boundary looks like a straight line.  \label{problem1Pic2}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=120mm]{problem1Pic6.jpg}
+\caption{ $\lambda =0.01, \sigma = 3$.  Most of the predictions for $x^{(i)}$ tends to overlap with their labels or be really close to their actual labels. I consider this is a good fit for the test data. \label{problem1Pic2}}
+\end{figure}
 
 \section{Problem 2}
 \section{Problem 3}
