@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  27 MAR 2015 03:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  27 MAR 2015 03:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -267,8 +267,26 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box29
 )
 \c@thm=\count112
+ (./hw1.aux
 
-No file hw1.aux.
+LaTeX Warning: Label `problem1Pic2' multiply defined.
+
+
+LaTeX Warning: Label `problem1Pic2' multiply defined.
+
+
+LaTeX Warning: Label `problem1Pic2' multiply defined.
+
+
+LaTeX Warning: Label `problem1Pic2' multiply defined.
+
+
+LaTeX Warning: Label `problem2Pic6' multiply defined.
+
+
+LaTeX Warning: Label `problem2Pic6' multiply defined.
+
+)
 \openout1 = `hw1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
@@ -285,7 +303,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
-(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count113
 \scratchdimen=\dimen118
@@ -327,6 +345,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 74.
 LaTeX Info: Redefining \pageref on input line 74.
 LaTeX Info: Redefining \nameref on input line 74.
+
+(./hw1.out) (./hw1.out)
 \@outlinefile=\write3
 \openout3 = `hw1.out'.
 
@@ -391,7 +411,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 111.
 
-<problem1Pic1.jpg, id=27, 562.1pt x 421.575pt>
+<problem1Pic1.jpg, id=67, 562.1pt x 421.575pt>
 File: problem1Pic1.jpg Graphic file (type jpg)
  <use problem1Pic1.jpg>
 Package pdftex.def Info: problem1Pic1.jpg used on input line 117.
@@ -400,13 +420,13 @@ Package pdftex.def Info: problem1Pic1.jpg used on input line 117.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-<problem1Pic2.jpg, id=36, 562.1pt x 421.575pt>
+<problem1Pic2.jpg, id=75, 562.1pt x 421.575pt>
 File: problem1Pic2.jpg Graphic file (type jpg)
  <use problem1Pic2.jpg>
 Package pdftex.def Info: problem1Pic2.jpg used on input line 123.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
 
-<problem1Pic3.jpg, id=37, 562.1pt x 421.575pt>
+<problem1Pic3.jpg, id=76, 562.1pt x 421.575pt>
 File: problem1Pic3.jpg Graphic file (type jpg)
  <use problem1Pic3.jpg>
 Package pdftex.def Info: problem1Pic3.jpg used on input line 129.
@@ -424,13 +444,13 @@ l.132
                                                   \fi \fi 
 l.132 
        <./problem1Pic1.jpg> <./problem1Pic2.jpg>]
-<problem1Pic4.jpg, id=44, 562.1pt x 421.575pt>
+<problem1Pic4.jpg, id=83, 562.1pt x 421.575pt>
 File: problem1Pic4.jpg Graphic file (type jpg)
  <use problem1Pic4.jpg>
 Package pdftex.def Info: problem1Pic4.jpg used on input line 135.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
 
-<problem1Pic5.jpg, id=45, 562.1pt x 421.575pt>
+<problem1Pic5.jpg, id=84, 562.1pt x 421.575pt>
 File: problem1Pic5.jpg Graphic file (type jpg)
  <use problem1Pic5.jpg>
 Package pdftex.def Info: problem1Pic5.jpg used on input line 141.
@@ -451,7 +471,7 @@ l.144
                                                   \fi \fi 
 l.144 
        <./problem1Pic3.jpg> <./problem1Pic4.jpg>]
-<problem1Pic6.jpg, id=52, 562.1pt x 421.575pt>
+<problem1Pic6.jpg, id=91, 562.1pt x 421.575pt>
 File: problem1Pic6.jpg Graphic file (type jpg)
  <use problem1Pic6.jpg>
 Package pdftex.def Info: problem1Pic6.jpg used on input line 147.
@@ -469,13 +489,13 @@ l.154
                                                   \fi \fi 
 l.154 
        <./problem1Pic5.jpg> <./problem1Pic6.jpg>]
-<sigma_1.jpg, id=59, 562.1pt x 421.575pt>
+<sigma_1.jpg, id=98, 562.1pt x 421.575pt>
 File: sigma_1.jpg Graphic file (type jpg)
  <use sigma_1.jpg>
 Package pdftex.def Info: sigma_1.jpg used on input line 157.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
 
-<sigma_5.jpg, id=60, 562.1pt x 421.575pt>
+<sigma_5.jpg, id=99, 562.1pt x 421.575pt>
 File: sigma_5.jpg Graphic file (type jpg)
  <use sigma_5.jpg>
 Package pdftex.def Info: sigma_5.jpg used on input line 164.
@@ -495,7 +515,7 @@ File: sigma_1.jpg Graphic file (type jpg)
 Package pdftex.def Info: sigma_1.jpg used on input line 170.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
 
-<sigma_01.jpg, id=68, 562.1pt x 421.575pt>
+<sigma_01.jpg, id=105, 562.1pt x 421.575pt>
 File: sigma_01.jpg Graphic file (type jpg)
  <use sigma_01.jpg>
 Package pdftex.def Info: sigma_01.jpg used on input line 176.
@@ -512,13 +532,13 @@ l.179
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.179 
-       <./sigma_5.jpg>] <sigma_002.jpg, id=77, 562.1pt x 421.575pt>
+       <./sigma_5.jpg>] <sigma_002.jpg, id=113, 562.1pt x 421.575pt>
 File: sigma_002.jpg Graphic file (type jpg)
 
 <use sigma_002.jpg>
 Package pdftex.def Info: sigma_002.jpg used on input line 182.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
- <sigma_001.jpg, id=78, 562.1pt x 421.575pt>
+ <sigma_001.jpg, id=114, 562.1pt x 421.575pt>
 File: sigma_001.jpg Graphic file (type jpg)
 
 <use sigma_001.jpg>
@@ -540,13 +560,13 @@ l.191
                                                   \fi \fi 
 l.191 
        <./sigma_01.jpg> <./sigma_002.jpg>]
-<sigma_1_level_curve.jpg, id=85, 562.1pt x 421.575pt>
+<sigma_1_level_curve.jpg, id=121, 562.1pt x 421.575pt>
 File: sigma_1_level_curve.jpg Graphic file (type jpg)
 
 <use sigma_1_level_curve.jpg>
 Package pdftex.def Info: sigma_1_level_curve.jpg used on input line 195.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
- <sigma_001_lc.jpg, id=86, 562.1pt x 421.575pt>
+ <sigma_001_lc.jpg, id=122, 562.1pt x 421.575pt>
 File: sigma_001_lc.jpg Graphic file (type jpg)
 
 <use sigma_001_lc.jpg>
@@ -577,7 +597,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 205.
 
-<training_testing_err.jpg, id=93, 562.1pt x 421.575pt>
+<training_testing_err.jpg, id=129, 562.1pt x 421.575pt>
 File: training_testing_err.jpg Graphic file (type jpg)
 
 <use training_testing_err.jpg>
@@ -608,13 +628,23 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
                                                   \fi \fi 
 l.230 ...silon_i \Phi(x_i)^T\Phi(x_j) \upsilon_j\]
                                                    <./training_testing_err.jpg>
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 240.
- [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 240.
+] <approxErr.jpg, id=140, 562.1pt x 421.575pt>
+File: approxErr.jpg Graphic file (type jpg)
+ <use approxErr.jpg>
+Package pdftex.def Info: approxErr.jpg used on input line 241.
+(pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.16
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.249 \end{document}
+                     <./approxErr.jpg>] [13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
  (./hw1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 240.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 240.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 249.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
 
 
 Package rerunfilecheck Warning: File `hw1.out' has changed.
@@ -622,18 +652,18 @@ Package rerunfilecheck Warning: File `hw1.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `hw1.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  17D4185FAEDACCD539468288BE5ABB60;768.
+(rerunfilecheck)             Before: 17D4185FAEDACCD539468288BE5ABB60;768
+(rerunfilecheck)             After:  E5B1B1654820941A8DBEB8197B80A160;873.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 240.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 249.
  ) 
 Here is how much of TeX's memory you used:
- 6531 strings out of 493117
- 92816 string characters out of 6135433
- 181467 words of memory out of 5000000
- 9873 multiletter control sequences out of 15000+600000
+ 6558 strings out of 493117
+ 93150 string characters out of 6135433
+ 182590 words of memory out of 5000000
+ 9889 multiletter control sequences out of 15000+600000
  14973 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,7n,32p,557b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -654,10 +684,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
 e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw1.pdf (12 pages, 391349 bytes).
+Output written on hw1.pdf (13 pages, 407468 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 221 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 164 words of extra memory for PDF output out of 10000 (max. 10000000)
 
