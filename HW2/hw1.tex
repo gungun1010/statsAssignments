@@ -189,7 +189,7 @@ The Matlab code for this problem is attached in \textbf{Appendix B: problem 2 co
 \caption{ When $\sigma = 0.01$. The boundary is again gone\label{problem2Pic6}}
 \end{figure}
 
-As a result $\sigma in (1, 0.01)$ shows accurate boundary decision values. The level curve of $\hat f = 0$ for $\sigma = 1, \sigma = 0.02$ is shown below. 
+As a result $\sigma \in (1, 0.01)$ shows accurate boundary decision values. The level curve of $\hat f = 0$ for $\sigma = 1, \sigma = 0.02$ is shown below. 
 \begin{figure}[H]
 \centering
 \includegraphics[width=120mm]{sigma_1_level_curve.jpg}
@@ -200,6 +200,14 @@ As a result $\sigma in (1, 0.01)$ shows accurate boundary decision values. The l
 \centering
 \includegraphics[width=120mm]{sigma_001_lc.jpg}
 \caption{ $\sigma = 0.01$ level curve of $\hat f = 0$ \label{problem2Pic6}}
+\end{figure}
+
+\subsection{Plot the training and testing error vs $1/\sigma$}
+The plot is shown in the figure below.
+\begin{figure}[H]
+\centering
+\includegraphics[width=120mm]{training_testing_err.jpg}
+\caption{ $\sigma \in [1,0.01)$ with step size -0.02. X-axis shows $1/\sigma$, and y-axis shows the accuracy in \percent, we see that even though the error keeps reducing with smaller $\sigma$ value, the testing results is not improving. This is because while $\sigma \rightarrow 0$, the decision boundary is overfitted onto each data point, ${x_i}_{i=1}^n, n = 10,000$. The testing dataset cannot benefit from the overfitting of training dataset.} 
 \end{figure}
 
 \section{Problem 3}
