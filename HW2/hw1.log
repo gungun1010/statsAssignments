@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  26 MAR 2015 21:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  27 MAR 2015 00:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -470,52 +470,68 @@ File: problem1Pic6.jpg Graphic file (type jpg)
  <use problem1Pic6.jpg>
 Package pdftex.def Info: problem1Pic6.jpg used on input line 147.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.154 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.154 
+       <./problem1Pic5.jpg> <./problem1Pic6.jpg>]
+<sigma_1_color.jpg, id=86, 562.1pt x 421.575pt>
+File: sigma_1_color.jpg Graphic file (type jpg)
+ <use sigma_1_color.jpg>
+Package pdftex.def Info: sigma_1_color.jpg used on input line 157.
+(pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 153.
+(hyperref)                removing `math shift' on input line 163.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 153.
+(hyperref)                removing `math shift' on input line 163.
 
-[5pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.158 \[
-        k_1(x,y) = <\Phi_1(x),\Phi_1(y)>\]pdfTeX warning (ext4): destination wi
-th the same identifier (name{figure.6}) has been already used, duplicate ignore
-d
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.158 \[
-        k_1(x,y) = <\Phi_1(x),\Phi_1(y)>\] <./problem1Pic5.jpg> <./problem1Pic6
-.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
+l.174 \[\Rightarrow k(x,y) \in \R\]
+                                    <./sigma_1_color.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
  (./hw1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
-Package rerunfilecheck Info: File `hw1.out' has not changed.
-(rerunfilecheck)             Checksum: B308B6A7DB0777DCA2B8499606973462;539.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 189.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 189.
 
+
+Package rerunfilecheck Warning: File `hw1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `hw1.out':
+(rerunfilecheck)             Before: B308B6A7DB0777DCA2B8499606973462;539
+(rerunfilecheck)             After:  375C4D3D9CAB2FC616CBEA8E2F45593F;615.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
  ) 
 Here is how much of TeX's memory you used:
- 6482 strings out of 493117
- 91969 string characters out of 6135433
+ 6490 strings out of 493117
+ 92101 string characters out of 6135433
  181999 words of memory out of 5000000
- 9844 multiletter control sequences out of 15000+600000
+ 9848 multiletter control sequences out of 15000+600000
  14973 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,7n,32p,372b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,7n,32p,372b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
@@ -533,10 +549,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
 e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw1.pdf (6 pages, 257140 bytes).
+Output written on hw1.pdf (7 pages, 277860 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
- 95 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 160 PDF objects out of 1000 (max. 8388607)
+ 125 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 100 words of extra memory for PDF output out of 10000 (max. 10000000)
 
