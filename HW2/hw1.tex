@@ -202,7 +202,7 @@ The Matlab code for this problem is attached in \textbf{Appendix B: problem 2 co
 \begin{figure}[H]
 \centering
 \includegraphics[width=120mm]{sigma_1_level_curve.jpg}
-\caption{ $\sigma = 1$ level curve of $\hat f = 0$, we can see that this setting is properly fitted with neighbourhood clearly defined. \label{problem2Pic6}}
+\caption{ $\sigma = 0.1$ level curve of $\hat f = 0$, we can see that this setting is properly fitted with neighbourhood clearly defined. \label{problem2Pic6}}
 \end{figure}
 
 \begin{figure}[H]
@@ -218,7 +218,7 @@ The plot is shown in the figure below.
 \begin{figure}[H]
 \centering
 \includegraphics[width=120mm]{training_testing_err.jpg}
-\caption{ $\sigma \in [1,0.01)$ with step size -0.02. X-axis shows $1/\sigma$, and y-axis shows the accuracy in \percent, we see that even though the error keeps reducing with smaller $\sigma$ value, the testing results is not improving. This is because while $\sigma \rightarrow 0$, the decision boundary is overfitted onto each data point, ${x_i}_{i=1}^n, n = 10,000$. The testing dataset cannot benefit from the overfitting of training dataset.} 
+\caption{ $\sigma \in [1,0.01)$ with step size -0.02. X-axis shows $1/\sigma$, and y-axis shows the accuracy in \percent, we see that even though the training error keeps reducing with smaller $\sigma$ value, the testing results is not improving. This is because while $\sigma \rightarrow 0$, the decision boundary is overfitted onto each data point, ${x_i}_{i=1}^n, n = 10,000$. The testing dataset cannot benefit from the overfitting of training dataset.} 
 \end{figure}
 
 \section{Problem 3}
@@ -239,18 +239,29 @@ Proving $k(x,y)$ is PSD:
 \[K_{ij} = k(x_i,x_j) =  <\Phi(x_i),\Phi(x_j)> =\Phi(x_i)^T\Phi(x_j) \]
 \[\upsilon^T K \upsilon = \sum_i^n \sum_j^n \upsilon_i K_{ij} \upsilon_j\]
 \[=\sum_i^n \sum_j^n \upsilon_i \Phi(x_i)^T\Phi(x_j) \upsilon_j\]
-\[=\sum_i^n \sum_j^n \upsilon_i \sum_l^n \phi_l(x_i)^T\phi_l(x_j) \upsilon_j\]
-\[=\sum_l^n \sum_i^n \sum_j^n \upsilon_i \phi_l(x_i)^T\phi_l(x_j) \upsilon_j\]
+\[=\sum_i^n \sum_j^n \upsilon_i \sum_l^n \phi_l(x_i)\phi_l(x_j) \upsilon_j\]
+\[=\sum_l^n \sum_i^n \sum_j^n \upsilon_i \phi_l(x_i)\phi_l(x_j) \upsilon_j\]
 \[=\sum_l^n(\sum_i^n \upsilon_i \phi_l(x_i))^2 \geq 0\]
 \subsection{Prove RKHS}
-FIXME
+Based on fundamental theorem of Calculus, we have Taylor series formula:
+\[ g(x) = \sum_{l=0}^{k-1}\frac{g^{(l)}(0)x^l}{l!} + \int_{0}^{x} \frac{(x-y)^{k-1}}{(k-1)!}g^{(x)}(y)dy\]
+With property of RKHS and the taylor series above, we have:
+\[g(x) = k(x,y) \]
+note that the k here stands for kernel instead of degree of deratives.
+and the kernel function must fit:
+\[(\frac{d}{dy})^l k(x,y) = \frac{x^l}{l!} \quad while\quad y = 0 ,\quad and\quad l \in [1,2,....n-1]\]
+\[(\frac{d}{dy})^{n} k(x,y) = \frac{(x-y)^{n-1}}{(k-1)!} \quad while\quad y \leq x\]
+\[(\frac{d}{dy})^{n} k(x,y) = 0 \quad while\quad y > x\]
+The function that meets these constraints is the function is the kernel function. This kernel function is solverable as polynomial function of $n$ degrees is $n$ times differentiable.
+
+
 
 \section{Problem 4}
 The code for this section is attached in \textbf{Appendix C: problem 4 code}. 
 \begin{figure}[H]
 \centering
 \includegraphics[width=120mm]{approxErr.jpg}
-\caption{ mean square error between $\hat f and f$ plot with the testing dataset. $n$ is set from 100 to 2000 with step size of 20. The plot shows that it is when n is very small, the error is minimum. The error reachs a maximum at halfway point and declines afterwards.  \label{problem2Pic6}}
+\caption{ The $y-axis$ shows mean square error between $\hat f$ and $f$ plot with the testing dataset. The $x-axis$ is the number of $n$. $n$ is set from 100 to 2000 with step size of 20. The plot shows that when n is very small, the error is minimum. The MSE declines exponentially when we increate the training size $n$.  \label{problem2Pic6}}
 \end{figure}
 
 

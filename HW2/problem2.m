@@ -21,6 +21,7 @@ for i=1:size(label,1)
     end
 end
 
+%open the testing dataset
 fid = fopen('dataset2/dataset2.2.test.csv');
 out = textscan(fid,'%f%f%s','delimiter',',');
 fclose(fid);
@@ -39,6 +40,7 @@ for i=1:size(label_test,1)
     end
 end
 
+%plot the dataset
 figure;
 gscatter(X_test(:,1),X_test(:,2),Y);
 title('Scatter Diagram of Data');
@@ -49,13 +51,16 @@ sigmaArr = 1:-0.02:0.01;
 testErr = zeros(size(sigmaArr,1),1);
 trainErr = zeros(size(sigmaArr,1),1);
 i=1;
-% for sigma = 1:-0.02:0.01
-    sigma = 0.02;
-    gamma = 1/(2*sigma^2);
 
+
+% for sigma = 1:-0.02:0.01
+    sigma = 0.1;
+    gamma = 1/(2*sigma^2);
+    
+    %Libsvm library obtained online
     % Libsvm options
     % -s 0 : classification
-    % -t 2 : RBF kernel
+    % -t 2 : RBF (gaussian) kernel
     % -g : gamma in the RBF kernel
     model = svmtrain(Y, X, sprintf('-s 0 -t 2 -g %g', gamma));
 
@@ -67,6 +72,8 @@ i=1;
     
     display(sigma);
 % end
+
+%the code below is for ploting the accuracy
 % figure
 % plot(1./sigmaArr,testErr,1./sigmaArr,trainErr);
 % xlabel('1/sigma');

@@ -34,8 +34,8 @@ for n = 100:20:2000
     %using closed form of f_hat
     KRR_train = ((K+lamda*Identity)^-1)*Y;
 
-    X_test = feature_test(1:n,1);
-    Y_test = label_test(1:n,1);
+    X_test = feature_test(1:2000,1);
+    Y_test = label_test(1:2000,1);
     KRR_test = KRR_GaussianKernel(X', X_test', sigma);
 
     %prediction here is the f_hat we are trying to fit
