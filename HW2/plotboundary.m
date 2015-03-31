@@ -25,10 +25,10 @@ for i = 1:size(X, 2)
 end
 
 % Plot the SVM boundary
-colormap hsv;
-%colormap(flipud(colormap));
+colormap bone;
+colormap(flipud(colormap));
 if (size(varargin, 2) == 1) && (varargin{1} == 't')
-    contourf(X,Y, vals, 50, 'LineStyle', 'none');
+    [C,h]= contourf(X,Y, vals, 50, 'LineStyle', 'none');
 end
 
 figure;

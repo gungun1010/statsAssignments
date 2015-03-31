@@ -49,7 +49,8 @@ sigmaArr = 1:-0.02:0.01;
 testErr = zeros(size(sigmaArr,1),1);
 trainErr = zeros(size(sigmaArr,1),1);
 i=1;
-for sigma = 1:-0.02:0.01
+% for sigma = 1:-0.02:0.01
+    sigma = 0.02;
     gamma = 1/(2*sigma^2);
 
     % Libsvm options
@@ -65,11 +66,11 @@ for sigma = 1:-0.02:0.01
     i=i+1;
     
     display(sigma);
-end
-figure
-plot(1./sigmaArr,testErr,1./sigmaArr,trainErr);
-xlabel('1/\\sigma');
-ylabel('accuracy');
+% end
+% figure
+% plot(1./sigmaArr,testErr,1./sigmaArr,trainErr);
+% xlabel('1/sigma');
+% ylabel('accuracy');
 
 % Plot heatmap
 plotboundary(Y, X, model, 't');

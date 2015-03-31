@@ -45,7 +45,7 @@
    \begin{center}
    \framebox{
       \vbox{\vspace{2mm}
-    \hbox to 6.28in { {\bf Stat365/665 (Spring 2015) Data Mining and Machine Learning \hfill Lecture: #4} }
+    \hbox to 6.28in { {\bf Stat365/665 (Spring 2015) Data Mining and Machine Learning } }
        \vspace{6mm}
        \hbox to 6.28in { {\Large \hfill #1  \hfill} }
        \vspace{6mm}
@@ -170,52 +170,48 @@ The Matlab code for this problem is attached in \textbf{Appendix B: problem 2 co
 \begin{figure}[H]
 \centering
 \includegraphics[width=120mm]{sigma_1.jpg}
-\caption{ $\sigma = 1$. This heatmap is for training dataset,we can clearly see the decision boundary based on the heatmap\label{problem2Pic1}}
+\caption{ $\sigma = 1$. This heatmap is for training dataset,we can see the blurred decision boundary based on the heatmap, in which the color band spans from lightest to darkest with respective to decsision value spanning from -1 to 1 $f$ value. The same convention applies to the rest of the heat map\label{problem2Pic1}}
 \end{figure}
 
 \subsection{Level curves}
 \begin{figure}[H]
 \centering
 \includegraphics[width=120mm]{sigma_5.jpg}
-\caption{ When $\sigma = 5$. we can not see the boundary \label{problem2Pic2}}
+\caption{ When $\sigma = 5$. we can see that most of the regions are way dark, meaning most of the decision values are positive and rather close to 1. It is clearly a case of underfitting \label{problem2Pic2}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=120mm]{sigma_1.jpg}
-\caption{ When $\sigma = 1$. we can see the boundary but the heatmap is still quite vague\label{problem2Pic3}}
+\caption{ When $\sigma = 1$. we can see the blurred decision boundary based on the heatmap\label{problem2Pic3}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=120mm]{sigma_01.jpg}
-\caption{ When $\sigma = 0.1$. The boundary became clear and the decision values are most accurate\label{problem2Pic4}}
+\caption{ When $\sigma = 0.1$. The boundary between dark and light color became clear and the decision values are most accurate\label{problem2Pic4}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=120mm]{sigma_002.jpg}
-\caption{ When $\sigma = 0.02$. The boundary fades away and is about to disappear\label{problem2Pic5}}
+\caption{ When $\sigma = 0.02$. The darker region previously seen became a collection of darker dots, and the lighter regions shows lighter dots. This can be catagorized as overfitting since the $f$ values are rather training set specific.\label{problem2Pic5}}
 \end{figure}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=120mm]{sigma_001.jpg}
-\caption{ When $\sigma = 0.01$. The boundary is again gone\label{problem2Pic6}}
-\end{figure}
 
-As a result $\sigma \in (1, 0.01)$ shows accurate boundary decision values. The level curve of $\hat f = 0$ for $\sigma = 1, \sigma = 0.02$ is shown below. 
 \begin{figure}[H]
 \centering
 \includegraphics[width=120mm]{sigma_1_level_curve.jpg}
-\caption{ $\sigma = 1$ level curve of $\hat f = 0$ \label{problem2Pic6}}
+\caption{ $\sigma = 1$ level curve of $\hat f = 0$, we can see that this setting is properly fitted with neighbourhood clearly defined. \label{problem2Pic6}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=120mm]{sigma_001_lc.jpg}
-\caption{ $\sigma = 0.01$ level curve of $\hat f = 0$ \label{problem2Pic6}}
+\includegraphics[width=120mm]{sigma_002_lc.jpg}
+\caption{ $\sigma = 0.02$ level curve of $\hat f = 0$,we see that the it is clearly a case of overftting as the neighbourhood became smaller and only is tailered to the training dataset. \label{problem2Pic6}}
 \end{figure}
+
+The level curve for the underfitting case cannot be displayed since all of the prediction are positive number. When $\sigma = 5$, level curve$\hat f = 0$, all of the decision values are on one size of $\hat f = 0$ curve.
 
 \subsection{Plot the training and testing error vs $1/\sigma$}
 The plot is shown in the figure below.
