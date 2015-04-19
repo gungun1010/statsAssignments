@@ -19,38 +19,53 @@ Ytest(~Ytest) = -1;
 
 n = size(Dataset,1);    %Wataset size
 W(1:n,1) = 1/n;         %initial weights
-m = 10;                 %number of iterations
-epsilon = 0;
+m = 1:10:1000;                 %number of iterations
+m=m';
+
 F = 0;
-   
+idx = 1;
+testError(1:size(m,1),1) = 0;  
 
-for t=0:1
-    
-    %train the Wecision tree, my weak learner
-    tree3 = fitctree(X,Y,'Weights',W,'MinLeafSize',100);
+for i=1:size(m,1)
+    for t=0:m(i,:)
 
-    %weight sum error
-    for i=1:n
-        prediction = predict(tree3, X(i,:));
-        err = signFunc(prediction, Y(i,:));
-        epsilon = epsilon + W(i,:)*err;
+        %train the decision tree, my weak learner, depth 3
+        tree3 = fitctree(X,Y,'Weights',W,'MinLeafSize',100);
+
+        %f_t(x) => prediction
+        prediction = predict(tree3, X);
+
+        %sign function for Y \ne f_t(x_i) 
+        err = bsxfun(@ne,prediction, Y);
+
+        %get epsilon val
+        epsilon = W'*err;
+
+        %alpha term
+        alpha = 0.5 * log((1-epsilon)/epsilon);
+
+        %this is the boosted prediction
+        F = F + alpha * predict(tree3,Xtest); 
+
+        %error function with alpha term
+        wErr = exp(-alpha * bsxfun(@times,Y, predict(tree3, X)) );
+
+        %normalization term
+        Z = W'*wErr;
+
+        %update weights
+        W = bsxfun(@times, W/Z,  wErr);
+
     end
-    fprintf('exiting\n');
-    pause(5);
-    %alpha term
-    alpha = 0.5 * log((1-epsilon)/epsilon);
-    F = F + alpha * predict(tree3,Xtest); 
     
-    Z =0;
-    for i=1:n
-        Z = Z + W(i,:)*exp(-alpha*Y(i,:)*predict(tree3, X(i,:)));
-    end
-    
-    for i=1:n
-        W(i,:) = (W(i,:)/Z) * exp(-alpha*Y(i,:)*predict(tree3, X(i,:)));
-    end
+    F_Sign = sign(F);
+    misPredict = bsxfun (@ne, F_Sign, Ytest);
+    testError(idx,:) = ones(size(F_Sign))'*misPredict;
+    display(m(i,:));
+    idx = idx +1;
 end
-F_Sign = sign(F);
+
+plot(m, testError/1000);
 view(tree3,'Mode','graph');    
 
     
