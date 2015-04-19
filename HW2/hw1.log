@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  31 MAR 2015 04:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  16 APR 2015 05:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -266,6 +266,13 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks27
 \@floatcapt=\box29
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/bbm-macros/bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+)
 \c@thm=\count112
  (./hw1.aux
 
@@ -289,20 +296,20 @@ LaTeX Warning: Label `problem2Pic6' multiply defined.
 )
 \openout1 = `hw1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
  (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count113
@@ -332,7 +339,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 74.
+Package hyperref Info: Link coloring OFF on input line 75.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -342,342 +349,361 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count119
 )
-LaTeX Info: Redefining \ref on input line 74.
-LaTeX Info: Redefining \pageref on input line 74.
-LaTeX Info: Redefining \nameref on input line 74.
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
 
 (./hw1.out) (./hw1.out)
 \@outlinefile=\write3
 \openout3 = `hw1.out'.
 
 
-Underfull \hbox (badness 10000) detected at line 76
- \OT1/cmr/bx/n/10 Stat365/665 (Spring 2015) Data Mining and Machine Learning  
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 79.
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 87.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 79.
+LaTeX Font Info:    Try loading font information for U+msb on input line 87.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Try loading font information for U+bbm on input line 101.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 79.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+) [1
 
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 133--142
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 79.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 88.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\delimiter' on input line 88.
+ []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beta' on input line 88.
+Underfull \hbox (badness 10000) in paragraph at lines 144--146
+
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 88.
+(hyperref)                removing `math shift' on input line 161.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\delimiter' on input line 88.
+(hyperref)                removing `\delimiter' on input line 161.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 88.
+(hyperref)                removing `\beta' on input line 161.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 105.
+(hyperref)                removing `superscript' on input line 161.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 105.
-
-[1
-
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 126.
+(hyperref)                removing `\delimiter' on input line 161.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 126.
+(hyperref)                removing `math shift' on input line 161.
 
-<problem1Pic1.jpg, id=74, 562.1pt x 421.575pt>
+[3]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 178.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 178.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 199.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 199.
+
+<problem1Pic1.jpg, id=102, 562.1pt x 421.575pt>
 File: problem1Pic1.jpg Graphic file (type jpg)
  <use problem1Pic1.jpg>
-Package pdftex.def Info: problem1Pic1.jpg used on input line 132.
+Package pdftex.def Info: problem1Pic1.jpg used on input line 205.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
- [2]
-<problem1Pic2.jpg, id=83, 562.1pt x 421.575pt>
+ [4]
+<problem1Pic2.jpg, id=109, 562.1pt x 421.575pt>
 File: problem1Pic2.jpg Graphic file (type jpg)
  <use problem1Pic2.jpg>
-Package pdftex.def Info: problem1Pic2.jpg used on input line 138.
+Package pdftex.def Info: problem1Pic2.jpg used on input line 211.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
 
-<problem1Pic3.jpg, id=84, 562.1pt x 421.575pt>
-File: problem1Pic3.jpg Graphic file (type jpg)
- <use problem1Pic3.jpg>
-Package pdftex.def Info: problem1Pic3.jpg used on input line 144.
-(pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
- [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.147 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2}) has been already used, duplicate ignored
+l.214 
+       <./problem1Pic1.jpg>] <problem1Pic3.jpg, id=115, 562.1pt x 421.575pt>
+File: problem1Pic3.jpg Graphic file (type jpg)
+
+<use problem1Pic3.jpg>
+Package pdftex.def Info: problem1Pic3.jpg used on input line 217.
+(pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
+ <problem1Pic4.jpg, id=116, 562.1pt x 421.575pt>
+File: problem1Pic4.jpg Graphic file (type jpg)
+
+<use problem1Pic4.jpg>
+Package pdftex.def Info: problem1Pic4.jpg used on input line 223.
+(pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.147 
-       <./problem1Pic1.jpg> <./problem1Pic2.jpg>]
-<problem1Pic4.jpg, id=91, 562.1pt x 421.575pt>
-File: problem1Pic4.jpg Graphic file (type jpg)
- <use problem1Pic4.jpg>
-Package pdftex.def Info: problem1Pic4.jpg used on input line 150.
-(pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
+l.226 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3}) has been already used, duplicate ignored
 
-<problem1Pic5.jpg, id=92, 562.1pt x 421.575pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.226 
+       <./problem1Pic2.jpg> <./problem1Pic3.jpg>]
+<problem1Pic5.jpg, id=123, 562.1pt x 421.575pt>
 File: problem1Pic5.jpg Graphic file (type jpg)
  <use problem1Pic5.jpg>
-Package pdftex.def Info: problem1Pic5.jpg used on input line 156.
+Package pdftex.def Info: problem1Pic5.jpg used on input line 229.
+(pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
+
+<problem1Pic6.jpg, id=124, 562.1pt x 421.575pt>
+File: problem1Pic6.jpg Graphic file (type jpg)
+ <use problem1Pic6.jpg>
+Package pdftex.def Info: problem1Pic6.jpg used on input line 235.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
 
 Underfull \vbox (badness 8019) has occurred while \output is active []
 
- [4pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.159 
+l.238 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-4}) has been already used, duplicate ignored
+5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.159 
-       <./problem1Pic3.jpg> <./problem1Pic4.jpg>]
-<problem1Pic6.jpg, id=99, 562.1pt x 421.575pt>
-File: problem1Pic6.jpg Graphic file (type jpg)
- <use problem1Pic6.jpg>
-Package pdftex.def Info: problem1Pic6.jpg used on input line 162.
-(pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
- [5pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.169 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.169 
-       <./problem1Pic5.jpg> <./problem1Pic6.jpg>]
-<sigma_1.jpg, id=106, 562.1pt x 421.575pt>
+l.238 
+       <./problem1Pic4.jpg> <./problem1Pic5.jpg>]
+<sigma_1.jpg, id=132, 562.1pt x 421.575pt>
 File: sigma_1.jpg Graphic file (type jpg)
  <use sigma_1.jpg>
-Package pdftex.def Info: sigma_1.jpg used on input line 172.
-(pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
-
-<sigma_5.jpg, id=107, 562.1pt x 421.575pt>
-File: sigma_5.jpg Graphic file (type jpg)
- <use sigma_5.jpg>
-Package pdftex.def Info: sigma_5.jpg used on input line 179.
+Package pdftex.def Info: sigma_1.jpg used on input line 245.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.182 
+l.248 
+       <./problem1Pic6.jpg>] <sigma_5.jpg, id=138, 562.1pt x 421.575pt>
+File: sigma_5.jpg Graphic file (type jpg)
+
+<use sigma_5.jpg>
+Package pdftex.def Info: sigma_5.jpg used on input line 252.
+(pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.255 
        <./sigma_1.jpg>]
 File: sigma_1.jpg Graphic file (type jpg)
  <use sigma_1.jpg>
-Package pdftex.def Info: sigma_1.jpg used on input line 185.
+Package pdftex.def Info: sigma_1.jpg used on input line 258.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
- has been already used, duplicate ignored
+ [10pdfTeX warning (ext4): destination with the same identifier (name{figure.8}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.188 
-       <./sigma_5.jpg>] <sigma_01.jpg, id=119, 562.1pt x 421.575pt>
+l.261 
+       <./sigma_5.jpg>] <sigma_01.jpg, id=149, 562.1pt x 421.575pt>
 File: sigma_01.jpg Graphic file (type jpg)
 
 <use sigma_01.jpg>
-Package pdftex.def Info: sigma_01.jpg used on input line 191.
+Package pdftex.def Info: sigma_01.jpg used on input line 264.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
- <sigma_002.jpg, id=120, 562.1pt x 421.575pt>
+ <sigma_002.jpg, id=150, 562.1pt x 421.575pt>
 File: sigma_002.jpg Graphic file (type jpg)
 
 <use sigma_002.jpg>
-Package pdftex.def Info: sigma_002.jpg used on input line 197.
+Package pdftex.def Info: sigma_002.jpg used on input line 270.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
- has been already used, duplicate ignored
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.200 
+l.273 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.200 
+l.273 
        <./sigma_01.jpg>]
-<sigma_1_level_curve.jpg, id=127, 562.1pt x 421.575pt>
+<sigma_1_level_curve.jpg, id=157, 562.1pt x 421.575pt>
 File: sigma_1_level_curve.jpg Graphic file (type jpg)
 
 <use sigma_1_level_curve.jpg>
-Package pdftex.def Info: sigma_1_level_curve.jpg used on input line 204.
+Package pdftex.def Info: sigma_1_level_curve.jpg used on input line 277.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.207 
-       <./sigma_002.jpg>] <sigma_002_lc.jpg, id=133, 562.1pt x 421.575pt>
-File: sigma_002_lc.jpg Graphic file (type jpg)
-
-<use sigma_002_lc.jpg>
-Package pdftex.def Info: sigma_002_lc.jpg used on input line 210.
-(pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
- [10pdfTeX warning (ext4): destination with the same identifier (name{figure.12
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.11
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.216 \subsection
+l.280 
+       <./sigma_002.jpg>] <sigma_002_lc.jpg, id=163, 562.1pt x 421.575pt>
+File: sigma_002_lc.jpg Graphic file (type jpg)
+
+<use sigma_002_lc.jpg>
+Package pdftex.def Info: sigma_002_lc.jpg used on input line 283.
+(pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.12
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.289 \subsection
                  {Plot the training and testing error vs $1/\sigma$}pdfTeX warn
 ing (ext4): destination with the same identifier (name{figure.13}) has been alr
 eady used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.216 \subsection
+l.289 \subsection
                  {Plot the training and testing error vs $1/\sigma$} <./sigma_1
 _level_curve.jpg> <./sigma_002_lc.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 216.
+(hyperref)                removing `math shift' on input line 289.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sigma' on input line 216.
+(hyperref)                removing `\sigma' on input line 289.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 216.
+(hyperref)                removing `math shift' on input line 289.
 
-<training_testing_err.jpg, id=140, 562.1pt x 421.575pt>
+<training_testing_err.jpg, id=171, 562.1pt x 421.575pt>
 File: training_testing_err.jpg Graphic file (type jpg)
 
 <use training_testing_err.jpg>
-Package pdftex.def Info: training_testing_err.jpg used on input line 220.
+Package pdftex.def Info: training_testing_err.jpg used on input line 293.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 225.
+(hyperref)                removing `math shift' on input line 298.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 225.
+(hyperref)                removing `math shift' on input line 298.
 
-[11pdfTeX warning (ext4): destination with the same identifier (name{figure.14}
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.14}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.235 ...T \Phi_1(y))\cdot(\Phi_2(x)^T\Phi_2(y))\]
+l.308 ...T \Phi_1(y))\cdot(\Phi_2(x)^T\Phi_2(y))\]
                                                    <./training_testing_err.jpg>
-] <approxErr.jpg, id=146, 562.1pt x 421.575pt>
+] <approxErr.jpg, id=178, 562.1pt x 421.575pt>
 File: approxErr.jpg Graphic file (type jpg)
  <use approxErr.jpg>
-Package pdftex.def Info: approxErr.jpg used on input line 263.
+Package pdftex.def Info: approxErr.jpg used on input line 336.
 (pdftex.def)             Requested size: 341.43306pt x 256.07324pt.
- [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 271.
+ [15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 344.
 
-[13pdfTeX warning (ext4): destination with the same identifier (name{figure.15}
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.15}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.271 \end{document}
+l.344 \end{document}
                      <./approxErr.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
  (./hw1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 271.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
 Package rerunfilecheck Info: File `hw1.out' has not changed.
-(rerunfilecheck)             Checksum: E5B1B1654820941A8DBEB8197B80A160;873.
+(rerunfilecheck)             Checksum: 167CA3678B7B740A744CBC2A17379F41;1092.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 271.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 344.
  ) 
 Here is how much of TeX's memory you used:
- 6554 strings out of 493117
- 93084 string characters out of 6135433
- 185396 words of memory out of 5000000
- 9887 multiletter control sequences out of 15000+600000
- 14973 words of font info for 56 fonts, out of 8000000 for 9000
+ 6610 strings out of 493117
+ 94183 string characters out of 6135433
+ 186537 words of memory out of 5000000
+ 9923 multiletter control sequences out of 15000+600000
+ 15763 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,7n,32p,566b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw1.pdf (13 pages, 385162 bytes).
+ 29i,7n,32p,566b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </Users/gungun1010/Library/texlive/2014/texmf-var/fonts/pk/ljfour/public/bbm
+/bbm10.600pk></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cme
+x10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+2.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.
+pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.
+pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on hw1.pdf (16 pages, 404770 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
- 176 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
- 175 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 264 PDF objects out of 1000 (max. 8388607)
+ 210 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 207 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,13 +1,17 @@
-\BOOKMARK [1][-]{section.1}{Problem 1}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{closed form of }{section.1}% 2
-\BOOKMARK [2][-]{subsection.1.2}{Find a simple expression for "026B30D \040- * "026B30D }{section.1}% 3
-\BOOKMARK [2][-]{subsection.1.3}{Find a closed form of }{section.1}% 4
-\BOOKMARK [2][-]{subsection.1.4}{implement the solution of \040in matlab}{section.1}% 5
-\BOOKMARK [1][-]{section.2}{Problem 2}{}% 6
-\BOOKMARK [2][-]{subsection.2.1}{Heatmap of learned function}{section.2}% 7
-\BOOKMARK [2][-]{subsection.2.2}{Level curves}{section.2}% 8
-\BOOKMARK [2][-]{subsection.2.3}{Plot the training and testing error vs 1/}{section.2}% 9
-\BOOKMARK [1][-]{section.3}{Problem 3}{}% 10
-\BOOKMARK [2][-]{subsection.3.1}{Show k\(x,y\) is a valid kernel}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.2}{Prove RKHS}{section.3}% 12
-\BOOKMARK [1][-]{section.4}{Problem 4}{}% 13
+\BOOKMARK [1][-]{section.1}{Announcement}{}% 1
+\BOOKMARK [1][-]{section.2}{Today}{}% 2
+\BOOKMARK [1][-]{section.3}{soft-margin SVM}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Margin Error}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Convex Relaxation}{section.3}% 5
+\BOOKMARK [1][-]{section.4}{Statical Learning Theory}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Find a simple expression for "026B30D \040- * "026B30D }{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Find a closed form of }{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.3}{implement the solution of \040in matlab}{section.4}% 9
+\BOOKMARK [1][-]{section.5}{Problem 2}{}% 10
+\BOOKMARK [2][-]{subsection.5.1}{Heatmap of learned function}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.2}{Level curves}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.3}{Plot the training and testing error vs 1/}{section.5}% 13
+\BOOKMARK [1][-]{section.6}{Problem 3}{}% 14
+\BOOKMARK [2][-]{subsection.6.1}{Show k\(x,y\) is a valid kernel}{section.6}% 15
+\BOOKMARK [2][-]{subsection.6.2}{Prove RKHS}{section.6}% 16
+\BOOKMARK [1][-]{section.7}{Problem 4}{}% 17

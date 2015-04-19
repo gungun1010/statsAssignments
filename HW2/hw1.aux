@@ -16,45 +16,49 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Problem 1}{1}{section.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}closed form of $\mathaccentV {hat}05E\beta $}{1}{subsection.1.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Find a simple expression for $\delimiter "026B30D  \mathaccentV {hat}05E\beta - \beta ^* \delimiter "026B30D $}{1}{subsection.1.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Find a closed form of $\mathaccentV {hat}05Ef$}{2}{subsection.1.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}implement the solution of $\mathaccentV {hat}05Ef$ in matlab}{2}{subsection.1.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Red circle indicates labels, blue cross is the $\mathaccentV {hat}05Ef$ value. $n=10, \lambda =1, \sigma ^2 = 0.1$ in this test case. I see that when $x^{(i)}$ is close to decision boundary, 0, it is more accurate in this setting.It is an underfit case. }}{3}{figure.1}}
-\newlabel{problem1Pic1}{{1}{3}{Red circle indicates labels, blue cross is the $\hat f$ value. $n=10, \lambda =1, \sigma ^2 = 0.1$ in this test case. I see that when $x^{(i)}$ is close to decision boundary, 0, it is more accurate in this setting.It is an underfit case}{figure.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces  $\lambda =1, \sigma = 1$ in this test case. I see that most of the $x^{(i)}$ can be predicted accurately with two exceptions at the end of the decision boundary }}{3}{figure.2}}
-\newlabel{problem1Pic2}{{2}{3}{$\lambda =1, \sigma = 1$ in this test case. I see that most of the $x^{(i)}$ can be predicted accurately with two exceptions at the end of the decision boundary}{figure.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces  $\lambda =1, \sigma = 5$ in this test case. Though the $x^{(i)}$ at both ends are better predicted, the average accuracy has dropped. }}{4}{figure.3}}
-\newlabel{problem1Pic2}{{3}{4}{$\lambda =1, \sigma = 5$ in this test case. Though the $x^{(i)}$ at both ends are better predicted, the average accuracy has dropped}{figure.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  $\lambda =1, \sigma = 10$. All $x^{(i)}$ are fitted badly. It is clearly a case of over fitting. }}{4}{figure.4}}
-\newlabel{problem1Pic2}{{4}{4}{$\lambda =1, \sigma = 10$. All $x^{(i)}$ are fitted badly. It is clearly a case of over fitting}{figure.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces  $\lambda =1, \sigma = 0.1$. It is clearly a case of under fit. It is way under fit so that the decision boundary looks like a straight line. }}{5}{figure.5}}
-\newlabel{problem1Pic2}{{5}{5}{$\lambda =1, \sigma = 0.1$. It is clearly a case of under fit. It is way under fit so that the decision boundary looks like a straight line}{figure.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces  $\lambda =0.01, \sigma = 3$. Most of the predictions for $x^{(i)}$ tends to overlap with their labels or be really close to their actual labels. I consider this is a good fit for the test data. }}{5}{figure.6}}
-\newlabel{problem1Pic2}{{6}{5}{$\lambda =0.01, \sigma = 3$. Most of the predictions for $x^{(i)}$ tends to overlap with their labels or be really close to their actual labels. I consider this is a good fit for the test data}{figure.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Problem 2}{6}{section.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Heatmap of learned function}{6}{subsection.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces  $\sigma = 1$. This heatmap is for training dataset,we can see the blurred decision boundary based on the heatmap, in which the color band spans from lightest to darkest with respective to decsision value spanning from -1 to 1 $f$ value. The same convention applies to the rest of the heat map}}{6}{figure.7}}
-\newlabel{problem2Pic1}{{7}{6}{$\sigma = 1$. This heatmap is for training dataset,we can see the blurred decision boundary based on the heatmap, in which the color band spans from lightest to darkest with respective to decsision value spanning from -1 to 1 $f$ value. The same convention applies to the rest of the heat map}{figure.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Level curves}{7}{subsection.2.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces  When $\sigma = 5$. we can see that most of the regions are way dark, meaning most of the decision values are positive and rather close to 1. It is clearly a case of underfitting }}{7}{figure.8}}
-\newlabel{problem2Pic2}{{8}{7}{When $\sigma = 5$. we can see that most of the regions are way dark, meaning most of the decision values are positive and rather close to 1. It is clearly a case of underfitting}{figure.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces  When $\sigma = 1$. we can see the blurred decision boundary based on the heatmap}}{8}{figure.9}}
-\newlabel{problem2Pic3}{{9}{8}{When $\sigma = 1$. we can see the blurred decision boundary based on the heatmap}{figure.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces  When $\sigma = 0.1$. The boundary between dark and light color became clear and the decision values are most accurate}}{8}{figure.10}}
-\newlabel{problem2Pic4}{{10}{8}{When $\sigma = 0.1$. The boundary between dark and light color became clear and the decision values are most accurate}{figure.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces  When $\sigma = 0.02$. The darker region previously seen became a collection of darker dots, and the lighter regions shows lighter dots. This can be catagorized as overfitting since the $f$ values are rather training set specific.}}{9}{figure.11}}
-\newlabel{problem2Pic5}{{11}{9}{When $\sigma = 0.02$. The darker region previously seen became a collection of darker dots, and the lighter regions shows lighter dots. This can be catagorized as overfitting since the $f$ values are rather training set specific}{figure.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces  $\sigma = 0.1$ level curve of $\mathaccentV {hat}05Ef = 0$, we can see that this setting is properly fitted with neighbourhood clearly defined. }}{10}{figure.12}}
-\newlabel{problem2Pic6}{{12}{10}{$\sigma = 0.1$ level curve of $\hat f = 0$, we can see that this setting is properly fitted with neighbourhood clearly defined}{figure.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces  $\sigma = 0.02$ level curve of $\mathaccentV {hat}05Ef = 0$,we see that the it is clearly a case of overftting as the neighbourhood became smaller and only is tailered to the training dataset. }}{10}{figure.13}}
-\newlabel{problem2Pic6}{{13}{10}{$\sigma = 0.02$ level curve of $\hat f = 0$,we see that the it is clearly a case of overftting as the neighbourhood became smaller and only is tailered to the training dataset}{figure.13}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Plot the training and testing error vs $1/\sigma $}{11}{subsection.2.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces  $\sigma \in [1,0.01)$ with step size -0.02. X-axis shows $1/\sigma $, and y-axis shows the accuracy in $\%$, we see that even though the training error keeps reducing with smaller $\sigma $ value, the testing results is not improving. This is because while $\sigma \rightarrow 0$, the decision boundary is overfitted onto each data point, ${x_i}_{i=1}^n, n = 10,000$. The testing dataset cannot benefit from the overfitting of training dataset.}}{11}{figure.14}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Problem 3}{11}{section.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Show $k(x,y)$ is a valid kernel}{11}{subsection.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Prove RKHS}{12}{subsection.3.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Problem 4}{13}{section.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces  The $y-axis$ shows mean square error between $\mathaccentV {hat}05Ef$ and $f$ plot with the testing dataset. The $x-axis$ is the number of $n$. $n$ is set from 100 to 2000 with step size of 20. The plot shows that when n is very small, the error is minimum. The MSE declines exponentially when we increate the training size $n$. }}{13}{figure.15}}
-\newlabel{problem2Pic6}{{15}{13}{The $y-axis$ shows mean square error between $\hat f$ and $f$ plot with the testing dataset. The $x-axis$ is the number of $n$. $n$ is set from 100 to 2000 with step size of 20. The plot shows that when n is very small, the error is minimum. The MSE declines exponentially when we increate the training size $n$}{figure.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Announcement}{1}{section.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Today}{1}{section.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}soft-margin SVM}{1}{section.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Margin Error}{1}{subsection.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Convex Relaxation}{2}{subsection.3.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Statical Learning Theory}{2}{section.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Find a simple expression for $\delimiter "026B30D  \mathaccentV {hat}05E\beta - \beta ^* \delimiter "026B30D $}{3}{subsection.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Find a closed form of $\mathaccentV {hat}05Ef$}{4}{subsection.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}implement the solution of $\mathaccentV {hat}05Ef$ in matlab}{5}{subsection.4.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Red circle indicates labels, blue cross is the $\mathaccentV {hat}05Ef$ value. $n=10, \lambda =1, \sigma ^2 = 0.1$ in this test case. I see that when $x^{(i)}$ is close to decision boundary, 0, it is more accurate in this setting.It is an underfit case. }}{5}{figure.1}}
+\newlabel{problem1Pic1}{{1}{5}{Red circle indicates labels, blue cross is the $\hat f$ value. $n=10, \lambda =1, \sigma ^2 = 0.1$ in this test case. I see that when $x^{(i)}$ is close to decision boundary, 0, it is more accurate in this setting.It is an underfit case}{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces  $\lambda =1, \sigma = 1$ in this test case. I see that most of the $x^{(i)}$ can be predicted accurately with two exceptions at the end of the decision boundary }}{6}{figure.2}}
+\newlabel{problem1Pic2}{{2}{6}{$\lambda =1, \sigma = 1$ in this test case. I see that most of the $x^{(i)}$ can be predicted accurately with two exceptions at the end of the decision boundary}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces  $\lambda =1, \sigma = 5$ in this test case. Though the $x^{(i)}$ at both ends are better predicted, the average accuracy has dropped. }}{6}{figure.3}}
+\newlabel{problem1Pic2}{{3}{6}{$\lambda =1, \sigma = 5$ in this test case. Though the $x^{(i)}$ at both ends are better predicted, the average accuracy has dropped}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  $\lambda =1, \sigma = 10$. All $x^{(i)}$ are fitted badly. It is clearly a case of over fitting. }}{7}{figure.4}}
+\newlabel{problem1Pic2}{{4}{7}{$\lambda =1, \sigma = 10$. All $x^{(i)}$ are fitted badly. It is clearly a case of over fitting}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces  $\lambda =1, \sigma = 0.1$. It is clearly a case of under fit. It is way under fit so that the decision boundary looks like a straight line. }}{7}{figure.5}}
+\newlabel{problem1Pic2}{{5}{7}{$\lambda =1, \sigma = 0.1$. It is clearly a case of under fit. It is way under fit so that the decision boundary looks like a straight line}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces  $\lambda =0.01, \sigma = 3$. Most of the predictions for $x^{(i)}$ tends to overlap with their labels or be really close to their actual labels. I consider this is a good fit for the test data. }}{8}{figure.6}}
+\newlabel{problem1Pic2}{{6}{8}{$\lambda =0.01, \sigma = 3$. Most of the predictions for $x^{(i)}$ tends to overlap with their labels or be really close to their actual labels. I consider this is a good fit for the test data}{figure.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Problem 2}{8}{section.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Heatmap of learned function}{8}{subsection.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces  $\sigma = 1$. This heatmap is for training dataset,we can see the blurred decision boundary based on the heatmap, in which the color band spans from lightest to darkest with respective to decsision value spanning from -1 to 1 $f$ value. The same convention applies to the rest of the heat map}}{9}{figure.7}}
+\newlabel{problem2Pic1}{{7}{9}{$\sigma = 1$. This heatmap is for training dataset,we can see the blurred decision boundary based on the heatmap, in which the color band spans from lightest to darkest with respective to decsision value spanning from -1 to 1 $f$ value. The same convention applies to the rest of the heat map}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Level curves}{10}{subsection.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces  When $\sigma = 5$. we can see that most of the regions are way dark, meaning most of the decision values are positive and rather close to 1. It is clearly a case of underfitting }}{10}{figure.8}}
+\newlabel{problem2Pic2}{{8}{10}{When $\sigma = 5$. we can see that most of the regions are way dark, meaning most of the decision values are positive and rather close to 1. It is clearly a case of underfitting}{figure.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces  When $\sigma = 1$. we can see the blurred decision boundary based on the heatmap}}{11}{figure.9}}
+\newlabel{problem2Pic3}{{9}{11}{When $\sigma = 1$. we can see the blurred decision boundary based on the heatmap}{figure.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces  When $\sigma = 0.1$. The boundary between dark and light color became clear and the decision values are most accurate}}{11}{figure.10}}
+\newlabel{problem2Pic4}{{10}{11}{When $\sigma = 0.1$. The boundary between dark and light color became clear and the decision values are most accurate}{figure.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces  When $\sigma = 0.02$. The darker region previously seen became a collection of darker dots, and the lighter regions shows lighter dots. This can be catagorized as overfitting since the $f$ values are rather training set specific.}}{12}{figure.11}}
+\newlabel{problem2Pic5}{{11}{12}{When $\sigma = 0.02$. The darker region previously seen became a collection of darker dots, and the lighter regions shows lighter dots. This can be catagorized as overfitting since the $f$ values are rather training set specific}{figure.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces  $\sigma = 0.1$ level curve of $\mathaccentV {hat}05Ef = 0$, we can see that this setting is properly fitted with neighbourhood clearly defined. }}{13}{figure.12}}
+\newlabel{problem2Pic6}{{12}{13}{$\sigma = 0.1$ level curve of $\hat f = 0$, we can see that this setting is properly fitted with neighbourhood clearly defined}{figure.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces  $\sigma = 0.02$ level curve of $\mathaccentV {hat}05Ef = 0$,we see that the it is clearly a case of overftting as the neighbourhood became smaller and only is tailered to the training dataset. }}{13}{figure.13}}
+\newlabel{problem2Pic6}{{13}{13}{$\sigma = 0.02$ level curve of $\hat f = 0$,we see that the it is clearly a case of overftting as the neighbourhood became smaller and only is tailered to the training dataset}{figure.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Plot the training and testing error vs $1/\sigma $}{14}{subsection.5.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces  $\sigma \in [1,0.01)$ with step size -0.02. X-axis shows $1/\sigma $, and y-axis shows the accuracy in $\%$, we see that even though the training error keeps reducing with smaller $\sigma $ value, the testing results is not improving. This is because while $\sigma \rightarrow 0$, the decision boundary is overfitted onto each data point, ${x_i}_{i=1}^n, n = 10,000$. The testing dataset cannot benefit from the overfitting of training dataset.}}{14}{figure.14}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Problem 3}{14}{section.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Show $k(x,y)$ is a valid kernel}{14}{subsection.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Prove RKHS}{15}{subsection.6.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Problem 4}{16}{section.7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces  The $y-axis$ shows mean square error between $\mathaccentV {hat}05Ef$ and $f$ plot with the testing dataset. The $x-axis$ is the number of $n$. $n$ is set from 100 to 2000 with step size of 20. The plot shows that when n is very small, the error is minimum. The MSE declines exponentially when we increate the training size $n$. }}{16}{figure.15}}
+\newlabel{problem2Pic6}{{15}{16}{The $y-axis$ shows mean square error between $\hat f$ and $f$ plot with the testing dataset. The $x-axis$ is the number of $n$. $n$ is set from 100 to 2000 with step size of 20. The plot shows that when n is very small, the error is minimum. The MSE declines exponentially when we increate the training size $n$}{figure.15}{}}
