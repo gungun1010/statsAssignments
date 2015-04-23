@@ -18,22 +18,45 @@ YrealTest = testset(:,8);
 Y(~Y) = -1;
 Ytest(~Ytest) = -1;
 
+Ftrain = 0;
 F = 0;
+m = 1:1:200;                 %number of iterations
+m=m';
+idx = 1;
+
 residual = Yreal;
-for i = 0:100
+
+testError(1:size(m,1),1) = 0;  
+trainError(1:size(m,1),1) =0;
+
+for i=1:size(m,1)
+    for t=0:m(i,:)
+        %fit a weak learner
+        tree3 = fitrtree(X,residual);
+
+        %get training result from the weak learner 
+        predTrain = predict(tree3, X);
+
+        %use the same tree for testing
+        predTest = predict(tree3, Xtest);
+
+        %sum all past iteration up to eventually converge
+        Ftrain = Ftrain + predTrain;
+        F = F + predTest;
+
+        %compute the residual
+        residual = bsxfun(@minus,Yreal,Ftrain);
+        residualTest = bsxfun(@minus, YrealTest, F);
+    end
     
-    
-    tree3 = fitrtree(X,residual);
-    prediction = predict(tree3, X);
-    F = F + prediction;
-    
-    %compute the residual
-    residual = bsxfun(@minus,Yreal,F);
-    display(norm(residual))
+    testError(idx,:) = norm(residualTest);
+    trainError(idx,:) = norm(residual);
+    idx = idx +1;
+    display(m(i,1));
 end
 
 % 
-% prediction = sign(prediction);
-% misPredict = bsxfun (@ne, prediction, Y);
+% predTrain = sign(predTrain);
+% misPredict = bsxfun (@ne, predTrain, Y);
 % 
-% error = ones(size(prediction))'*misPredict;
+% error = ones(size(predTrain))'*misPredict;
