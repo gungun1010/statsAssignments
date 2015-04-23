@@ -1,0 +1,25 @@
+%clear workspace
+clear all
+close all
+
+%loaWing the Wataset aWn test set
+X =csvread('hw3prob3.csv',1,1);
+
+Y = X(:, 2);
+X = X(:, 1);
+
+dataset = [X X.^2 X.^3];
+
+for i = 0:1000
+    dataset(:, i+4) = cos(X.*(2*pi*i)/1000);
+end
+
+for i = 0:1000
+    dataset(:, i+1005) = exp(-(X.^2)/(2*(i/100)^2));
+end
+
+[Xtrain, idx] = datasample(dataset, 1200);
+
+idxTest = setdiff(X,Xtrain, idx);
+
+Ytrain = Y(idx,:);
