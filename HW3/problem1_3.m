@@ -22,12 +22,15 @@ W(1:n,1) = 1/n;         %initial weights
 m = 2:5:60;             %number of iterations
 m=m';
 
-F = 0;
+
 idx = 1;
 testError(1:size(m,1),1) = 0;  
 
 for i=1:size(m,1)
-    for t=0:3
+    F = 0;
+    n = size(Dataset,1);    %Wataset size
+    W(1:n,1) = 1/n;         %initial weights
+    for t=0:10
 
         %train the decision tree, my weak learner, depth 3
         tree3 = fitctree(X,Y,'Weights',W', 'MaxNumSplits',m(i,:));

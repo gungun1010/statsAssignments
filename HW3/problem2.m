@@ -21,7 +21,7 @@ Ytest(~Ytest) = -1;
 
 Ftrain = 0;
 F = 0;
-m = 1:1:40;                 %number of iterations
+m = 1:2:100;                 %number of iterations
 m=m';
 idx = 1;
 
@@ -53,16 +53,16 @@ for i=1:size(m,1)
         residual = bsxfun(@minus,Yreal,Ftrain);
         residualTest = bsxfun(@minus, YrealTest, F);
     end
-%        testError(idx,:) = sum(residualTest);
-%        trainError(idx,:) = sum(residual);
+       testError(idx,:) = norm(residualTest);
+       trainError(idx,:) = norm(residual);
      
-    residualTest_sign = sign(residualTest);
-    misPredict = bsxfun (@ne, residualTest_sign, Ytest);
-    testError(idx,:) = sum(misPredict);
-
-    residual_sign = sign(residual);
-    misPredictTrain = bsxfun (@ne, residual_sign, Y);
-    trainError(idx,:) = sum(misPredictTrain);
+%     residualTest_sign = sign(residualTest);
+%     misPredict = bsxfun (@ne, residualTest_sign, Ytest);
+%     testError(idx,:) = sum(misPredict);
+% 
+%     residual_sign = sign(residual);
+%     misPredictTrain = bsxfun (@ne, residual_sign, Y);
+%     trainError(idx,:) = sum(misPredictTrain);
     
     idx = idx +1;
     display(m(i,1));
