@@ -49,11 +49,18 @@ for i=1:size(m,1)
         residualTest = bsxfun(@minus, YrealTest, F);
     end
     
-    testError(idx,:) = norm(residualTest);
-    trainError(idx,:) = norm(residual);
+    residualTest_sign = sign(residualTest);
+    misPredict = bsxfun (@ne, residualTest_sign, Ytest);
+    testError(idx,:) = ones(size(residualTest_sign))'*misPredict;
+
+    residual_sign = sign(residual);
+    misPredictTrain = bsxfun (@ne, residual_sign, Y);
+    trainError(idx,:) = ones(size(residual_sign))'*misPredictTrain;
+    
     idx = idx +1;
     display(m(i,1));
 end
+
 
 % 
 % predTrain = sign(predTrain);
