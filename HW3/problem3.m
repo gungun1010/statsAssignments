@@ -48,3 +48,6 @@ results = features*theta;
 
 %compare the real labels vs our fitted results
 plot(1:1:1601, Y, 1:1:1601, results);
+title('fiited function');
+xlabel('observation');
+ylabel('label');

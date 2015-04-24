@@ -20,7 +20,7 @@ Ytest(~Ytest) = -1;
 
 Ftrain = 0;
 F = 0;
-m = 1:1:12;                 %number of iterations
+m = 1:1:20;                 %number of iterations
 m=m';
 idx = 1;
 
@@ -65,15 +65,9 @@ end
 
 figure;
 plot(m, testError);
-title('testing error');
-xlabel('iteration');
-ylabel('error rate');
-
 figure;
 plot(m, trainError);
-title('training error');
-xlabel('iteration');
-ylabel('error rate');
+title('training error'
 % 
 % predTrain = sign(predTrain);
 % misPredict = bsxfun (@ne, predTrain, Y);

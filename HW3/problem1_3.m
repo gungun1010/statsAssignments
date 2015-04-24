@@ -19,7 +19,7 @@ Ytest(~Ytest) = -1;
 
 n = size(Dataset,1);    %Wataset size
 W(1:n,1) = 1/n;         %initial weights
-m = 3:10:90;             %number of iterations
+m = 2:1:8;             %number of iterations
 m=m';
 
 F = 0;
