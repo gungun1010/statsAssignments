@@ -1,0 +1,3 @@
+function dev = critfun(XT, YT, Xt, Yt)
+
+theta = (XT'*XT)^-1

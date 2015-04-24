@@ -26,17 +26,25 @@ end
 % 
 % Xtest = dataset(idxTest,:);
 % Ytest = Y(idxTest,:);
+
+fun = @(XT,YT,Xt,Yt)...
+      (sum((Yt - ((((XT')*XT)^-1 * XT'*YT)')*Xt).^2));
+  
 maxdev = chi2inv(.95,1);  
 opt = statset('display','iter',...
               'TolFun',maxdev,...
               'TolTypeFun','abs');
   
 inmodel = sequentialfs(@critfun,dataset,Y,...
-                       'cv','none',...
-                       'nullmodel',true,...
                        'options',opt,...
                        'direction','forward',...
                        'nfeatures',10);
+                   
+featureIdx = find(inmodel);
 
+features = dataset(:,featureIdx);
 
+theta = ((features')*features)^-1 * features'*Y;
+
+err = sum((Y - features*theta).^2);
 
