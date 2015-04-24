@@ -21,19 +21,23 @@ Ytest(~Ytest) = -1;
 
 Ftrain = 0;
 F = 0;
-m = 1:1:12;                 %number of iterations
+m = 1:1:40;                 %number of iterations
 m=m';
 idx = 1;
-
-residual = Yreal;
 
 testError(1:size(m,1),1) = 0;  
 trainError(1:size(m,1),1) =0;
 
 for i=1:size(m,1)
+    
+    
+    residual = Yreal;
+
+    F =0;
+    Ftrain = 0;
     for t=0:m(i,:)
         %fit a weak learner
-        tree3 = fitrtree(X,residual);
+        tree3 = fitrtree(X,residual, 'MaxNumSplits',4);
 
         %get training result from the weak learner 
         predTrain = predict(tree3, X);
@@ -49,16 +53,16 @@ for i=1:size(m,1)
         residual = bsxfun(@minus,Yreal,Ftrain);
         residualTest = bsxfun(@minus, YrealTest, F);
     end
-       testError(idx,:) = norm(residualTest);
-       trainError(idx,:) = norm(residual);
-%      
-%     residualTest_sign = sign(residualTest);
-%     misPredict = bsxfun (@ne, residualTest_sign, Ytest);
-%     testError(idx,:) = ones(size(residualTest_sign))'*misPredict;
-% 
-%     residual_sign = sign(residual);
-%     misPredictTrain = bsxfun (@ne, residual_sign, Y);
-%     trainError(idx,:) = ones(size(residual_sign))'*misPredictTrain;
+%        testError(idx,:) = sum(residualTest);
+%        trainError(idx,:) = sum(residual);
+     
+    residualTest_sign = sign(residualTest);
+    misPredict = bsxfun (@ne, residualTest_sign, Ytest);
+    testError(idx,:) = sum(misPredict);
+
+    residual_sign = sign(residual);
+    misPredictTrain = bsxfun (@ne, residual_sign, Y);
+    trainError(idx,:) = sum(misPredictTrain);
     
     idx = idx +1;
     display(m(i,1));
