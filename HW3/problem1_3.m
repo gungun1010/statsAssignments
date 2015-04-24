@@ -11,7 +11,7 @@ X = Dataset(:,1:7);
 Xtest = testset(:, 1:7);
 
 Y = Dataset(:,8);
-Ytest = Dataset(:,8);
+Ytest = testset(:,8);
 
 %change all 0 to -1
 Y(~Y) = -1;
@@ -19,7 +19,7 @@ Ytest(~Ytest) = -1;
 
 n = size(Dataset,1);    %Wataset size
 W(1:n,1) = 1/n;         %initial weights
-m = 2:1:8;             %number of iterations
+m = 2:5:60;             %number of iterations
 m=m';
 
 F = 0;

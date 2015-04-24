@@ -10,7 +10,8 @@ X = Dataset(:,1:6);
 Xtest = testset(:, 1:6);
 
 Y = Dataset(:,7);
-Ytest = Dataset(:,7);
+Ytest = testset(:,7);
+
 Yreal = Dataset(:,8);
 YrealTest = testset(:,8);
 

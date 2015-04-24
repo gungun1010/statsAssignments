@@ -11,7 +11,7 @@ X = Dataset(:,1:7);
 Xtest = testset(:, 1:7);
 
 Y = Dataset(:,8);
-Ytest = Dataset(:,8);
+Ytest = testset(:,8);
 
 %change all 0 to -1
 Y(~Y) = -1;
@@ -43,7 +43,6 @@ for i=1:size(m,1)
 
         %alpha term
         alpha = (1/2) * log((1-epsilon)/epsilon);
-
         %this is the boosted prediction
         F = F + alpha * predict(tree3,X); 
 
