@@ -21,7 +21,7 @@ Ytest(~Ytest) = -1;
 
 Ftrain = 0;
 F = 0;
-m = 1:2:100;                 %number of iterations
+m = 1:2:50;                 %number of iterations
 m=m';
 idx = 1;
 
